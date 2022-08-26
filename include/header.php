@@ -25,7 +25,7 @@ echo "<script> alert('data inserted successfully');</script>";
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta name="viewport" content=" width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Srinath Public School</title>
+<title>Hemkund Public School</title>
 
 <!-- favicon icon -->
 <link rel="shortcut icon" href="images/favicon.png" />
@@ -46,7 +46,7 @@ echo "<script> alert('data inserted successfully');</script>";
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 
 <!-- prettyphoto -->
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"> -->
 
 <!-- shortcodes -->
 <link rel="stylesheet" type="text/css" href="css/shortcodes.css"/>
@@ -203,14 +203,12 @@ width:295px;
                <div class="container">
                    <div class="row">
                        <div class="col-xl-12 d-flex flex-row align-items-center" style="padding-top: 15px;">
-                           <!--<div class="top_bar_contact_item">
-                               <div class="top_bar_icon"></div><a href="mailto:srinathpublicschool@gmail.com"></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                           </div>-->
+                           
                            <div class="top_bar_contact_item">
                                <div class="top_bar_icon"><i class="fa fa-phone"></i></div><a href="tel:0657-22383114">0657-22383114</a> / <a href="tel:8986626046">8986626046</a>
                            </div>
                            <div class="top_bar_contact_item">
-                               <div class="top_bar_icon"><i class="fa fa-envelope-o"></i></div><a href="mailto:srinathpublicschool@gmail.com">srinathpublicschool@gmail.com</a>
+                               <div class="top_bar_icon"><i class="fa fa-envelope-o"></i></div><a href="mailto:hemkundpublicschool@gmail.com">hemkundpublicschool@gmail.com</a>
                            </div>
                            <div class="top_bar_contact_item ml-auto">
                                <!--<a href="admission.php">Online Admission</a>-->
@@ -285,7 +283,7 @@ width:295px;
     align-items: center;">
                                    <!-- site-branding -->
                                    <div class="site-branding mr-auto">
-                                       <a class="home-link" href="index.php" title="Srinath Public School" >
+                                       <a class="home-link" href="index.php" title="Hemkund Public School" >
                                            <img id="logo-img" class="img-center lazyload" data-src="images/logo-img.png" alt="logo-img" style="height: 75px;
     margin-top: 10px;">
                                        </a>
@@ -419,14 +417,3 @@ width:295px;
 
 
 
-<!--<section class="ttm-row cta-section ttm-bgcolor-skincolor text-center clearfix" style="background:#ff4f01!important;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12" style="
-    display: flex;
-">
-                       <marquee direction="left"><h4 class="font-weight-normal" style="font-size: 20px;padding-top: 10px;">Srinath Public School Admission Going On. <a href="contact.php" type="button" class="flash-button">Conatct Us</a></h4></marquee>
-                    </div>
-                </div>
-            </div>
-        </section>-->

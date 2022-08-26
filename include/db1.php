@@ -8,11 +8,11 @@ if(!$conn)
 {
     die('unable to connect to database');
 }
-else
-{
-    echo "<script>
-    alert('connected');
-    </script>
-    ";
-}
+// else
+// {
+//     echo "<script>
+//     alert('connected');
+//     </script>
+//     ";
+// }
 ?>
