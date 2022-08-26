@@ -284,7 +284,7 @@ width:295px;
                                    <!-- site-branding -->
                                    <div class="site-branding mr-auto">
                                        <a class="home-link" href="index.php" title="Hemkund Public School" >
-                                           <img id="logo-img" class="img-center lazyload" data-src="images/logo-img.png" alt="logo-img" style="height: 75px;
+                                           <img id="logo-img" class="img-center lazyload" data-src="images/hem-logo.png" alt="logo-img" style="height: 75px;
     margin-top: 10px;">
                                        </a>
                                    </div><!-- site-branding end -->

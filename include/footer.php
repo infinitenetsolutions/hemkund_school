@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h4 class="font-weight-normal" style="margin-bottom: 0px;padding: 10px;">For the bright future of your child join <b>Srinath Public School</b>  </h4>
+                        <h4 class="font-weight-normal" style="margin-bottom: 0px;padding: 10px;">For the bright future of your child join <b>Hemkund Public School</b>  </h4>
                     </div>
                 </div>
             </div>
@@ -27,10 +27,10 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                         <div class="widget widget_text clearfix">
                             <div class="footer-logo">
-                                <img id="footer-logo-img" class="img-center lazyload" data-src="images/logo-img1.png" alt="image">
+                                <img id="footer-logo-img" class="img-center lazyload" data-src="images/hem-logo1.png" alt="image">
                             </div>
                             <div class="textwidget widget-text">
-                                <p class="pb-10 pr-30 res-575-pr-0">The school was established in 2014. Srinath Public School is a Co-ed school affiliated to Central Board of Secondary Education</p>
+                                <p class="pb-10 pr-30 res-575-pr-0">The school was established in 2014. Hemkund Public School is a Co-ed school affiliated to Central Board of Secondary Education</p>
                             </div>
                         </div>
                        
@@ -51,7 +51,7 @@
                         <div class="widget style2 widget-out-link clearfix">
                            <h3 class="widget-title">Our Location</h3>
                            <p>DINDLI- ADITYAPUR- PO- ADITYAPUR- DIST- SERAIKELA-KHARSAWAN -831013</p>
-                          <p>srinathpublicschool@gmail.com </p>
+                          <p>hemkundpublicschool@gmail.com </p>
                           <p>+91 089866 26046</p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                                 <img data-src="images/footer-award-two.png" class="img-fluid lazyload" alt="award-two">
                             </div>
                         </div> -->
-                        <div class="text-center pb-15">© Copyright Srinath Public School <?php echo date('Y');?> All rights reserved | Designed by<a href="https://www.infinitenetsolutions.com/"> Infinite Net Solutions</a></div>
+                        <div class="text-center pb-15">© Copyright Hemkund Public School <?php echo date('Y');?> All rights reserved | Designed by<a href="https://www.infinitenetsolutions.com/"> Infinite Net Solutions</a></div>
 
                     </div>
                 </div>
