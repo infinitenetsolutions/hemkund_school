@@ -14,18 +14,22 @@ if(isset($_POST['submit']))
 	$year = substr($_POST['year'],0,4);
     //$year = $_POST['year'];
     $event = $_POST['event'];
-  $uploaded_images = array();
- foreach($_FILES['img']['name'] as $key=>$val){        
+  	$uploaded_images = array();
+	foreach($_FILES['img']['name'] as $key=>$val){        
  	$upload_dir = "img/press/";
  	$upload_file = $upload_dir.$_FILES['img']['name'][$key];
  	$filename = $_FILES['img']['name'][$key];
- 	if(move_uploaded_file($_FILES['img']['tmp_name'][$key],$upload_file)){
+ 	
+	if(move_uploaded_file($_FILES['img']['tmp_name'][$key],$upload_file)){
  		$uploaded_images[] = $upload_file;
- 		$insert_sql = "INSERT INTO `press`(`image_year`,`image`,`img_desc`) VALUES ('$year','$filename','$event')";
- 		$data = mysqli_query($con, $insert_sql);
+ 		echo $insert_sql = "INSERT INTO `press`(`image_year`,`image`,`img_desc`) VALUES ('$year','$filename','$event')";
+ 		exit;
+		$data = mysqli_query($con, $insert_sql);
          
  	}
- }
+}
+exit;
+ 
  if($data){
          echo "<script> alert('inserted successfully'); </script>";
          header('location:press_gallery.php');}
@@ -47,7 +51,7 @@ if(isset($_POST['submit']))
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Srinath School Portal | Admin Add Images</title>
+	<title>Hemkund School Portal | Admin Add Images</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

@@ -127,7 +127,7 @@ $destination15 = 'docs/' . $file15;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Srinath Public School</title>
+  <title>Hemkund Public School</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -173,7 +173,6 @@ $destination15 = 'docs/' . $file15;
                         <label for="inputAddressLine1">NAME OF THE SCHOOL</label>
                     </div>
                     <div class="col-sm-6">
-                         <!-- <label for="inputAddressLine1">SRINATH PUBLIC SCHOOL</label> -->
                          <input type="text" name="sname" class="form-control"/>
                     </div>
                 </div>
@@ -202,7 +201,6 @@ $destination15 = 'docs/' . $file15;
                         <label for="inputWebsite">COMPLETE ADDRESS WITH PINCODE</label>
                     </div>
                      <div class="col-sm-6">
-                        <!-- <label for="inputAddressLine1">SRINATH PUBLIC SCHOOL, -831002</label> -->
                         <input type="text" name="saddr"  class="form-control"/>
                     </div>
                 </div>
@@ -232,7 +230,6 @@ $destination15 = 'docs/' . $file15;
                         <label for="inputAddressLine1">SCHOOL EMAIL ID</label>
                     </div>
                     <div class="col-sm-6">
-                         <!-- <label for="inputAddressLine1">info@SRINATH.com</label> -->
                          <input type="text" name="semail"  class="form-control"/>
                     </div>
                 </div>

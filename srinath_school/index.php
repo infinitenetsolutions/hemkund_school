@@ -34,7 +34,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Srinath Public School | Admin Login</title>
+	<title>Hemkund Public School | Admin Login</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
@@ -65,7 +65,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 						<div class="well row pt-2x pb-3x bk-light">
 							<div class="col-md-10" style="margin-left: 50px;">
                             <img src="../images/logo_sri.png" style="width:90px;margin-left: 30%;">
-                            <h1 class="text-center text-bold text-light ">Srinath Public School</h1>
+                            <h1 class="text-center text-bold text-light ">Hemkund Public School</h1>
                              <span class="text-center text-bold text-light " style="font-size: 30px;"><b style="font-family: 'FontAwesome';margin-left: 20%;"> Admin Login</b></span>
 								<form method="post">
 

@@ -44,7 +44,7 @@ header('Location: slider.php');
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Srinath Public School | Admin Update Slider</title>
+	<title>Hemkund Public School | Admin Update Slider</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

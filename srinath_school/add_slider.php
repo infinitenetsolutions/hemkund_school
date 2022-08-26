@@ -11,6 +11,7 @@ else{
 if(isset($_POST['submit']))
   {
 $img=$_FILES["img"]["name"];
+echo $img;exit;
 move_uploaded_file($_FILES["img"]["tmp_name"],"img/vehicleimages/".$_FILES["img"]["name"]);
 $sql="INSERT INTO tblslider(img) VALUES(:img)";
 $query = $dbh->prepare($sql);
@@ -41,7 +42,7 @@ $error="Something went wrong. Please try again";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Srinath School Portal | Admin Add slider</title>
+	<title>Hemkund School Portal | Admin Add slider</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

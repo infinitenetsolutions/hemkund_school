@@ -31,7 +31,7 @@ $msg="events deleted successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Srinath School Portal |Admin Manage events</title>
+	<title>Hemkund School Portal |Admin Manage events</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

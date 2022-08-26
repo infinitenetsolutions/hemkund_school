@@ -1,11 +1,26 @@
 <?php 
 // DB credentials.
-$con = mysqli_connect('localhost','srinathschool_db','Srinath@123','srinathschool_db');
+if ($_SERVER['HTTP_HOST'] == 'localhost') {
+    $con = mysqli_connect('localhost','root','','hemkund_school');
+} else {
+    $con = mysqli_connect('localhost','hemkundschool2022_hemkundschool_db','Hemkundschool@2022','hemkundschool2022_hemkundschool_db');
+}
+if(!$con)
+{
+    die('unable to connect to database');
+}
+// else
+// {
+//     echo "<script>
+//     alert('connected');
+//     </script>
+//     ";
+// }
 
 define('DB_HOST','localhost');
-define('DB_USER','srinathschool_db');
-define('DB_PASS','Srinath@123');
-define('DB_NAME','srinathschool_db');
+define('DB_USER','root');
+define('DB_PASS','');
+define('DB_NAME','hemkund_school');
 // Establish database connection.
 try
 {

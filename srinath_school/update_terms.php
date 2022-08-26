@@ -30,7 +30,7 @@ $msg="Terms and conditions Info Updated successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Srinath School Portal | Admin Update Terms and Condition</title>
+	<title>Hemkund School Portal | Admin Update Terms and Condition</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

@@ -15,7 +15,7 @@ $id = $_GET['id'];
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Srinath School | Admission Form </title>
+        <title>Hemkund School | Admission Form </title>
         <link rel="icon" href="images/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -471,7 +471,7 @@ $data = mysqli_fetch_assoc($result);
                                 </div>
                                 <div class="card card-secondary">
                                     <div class="card-header">
-                                        <h3 class="card-title">Name of brother and sister if studying in Srinath Public School</h3>
+                                        <h3 class="card-title">Name of brother and sister if studying in Hemkund Public School</h3>
                                     </div>
                                     <div class="card-body table-responsive p-0">
                                         <div class="card-body">

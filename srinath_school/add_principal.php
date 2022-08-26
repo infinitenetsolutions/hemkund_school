@@ -43,7 +43,7 @@ $error="Something went wrong. Please try again";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Srinath School Portal | Admin Add Principal</title>
+	<title>Hemkund School Portal | Admin Add Principal</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

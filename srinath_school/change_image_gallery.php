@@ -44,7 +44,7 @@ header('Location: img_gallery.php');
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Srinath Public School | Admin Update Image</title>
+	<title>Hemkund Public School | Admin Update Image</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
