@@ -118,7 +118,7 @@ div#block-hd {
                                         <div class="featured-imagebox featured-imagebox-portfolio">
                                                <div class="container1">
   												<a href="press_event.php?event=<?php echo $row['img_desc'] ?>">
-                                                <img src="srinath_school/img/press/<?php echo $row['image']; ?>" alt="Avatar" class="image1" alt="image" style="width: 100%;height: 270px;">
+                                                <img src="hemkund_school/img/press/<?php echo $row['image']; ?>" alt="Avatar" class="image1" alt="image" style="width: 100%;height: 270px;">
                                                 <div class="overlay1">
                                                   <div class="text1"><?php echo $row['img_desc'] ?></div>
                                                 </div>
