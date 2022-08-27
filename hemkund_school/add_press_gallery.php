@@ -15,20 +15,23 @@ if(isset($_POST['submit']))
     //$year = $_POST['year'];
     $event = $_POST['event'];
   	$uploaded_images = array();
-	foreach($_FILES['img']['name'] as $key=>$val){        
- 	$upload_dir = "img/press/";
+	$upload_dir = "img/press/";
+	  foreach($_FILES['img']['name'] as $key=>$val){        
+
  	$upload_file = $upload_dir.$_FILES['img']['name'][$key];
- 	$filename = $_FILES['img']['name'][$key];
- 	
-	if(move_uploaded_file($_FILES['img']['tmp_name'][$key],$upload_file)){
+ 	// print_r($_FILES);exit;
+	$filename = $_FILES["img"]["tmp_name"][$key];
+	move_uploaded_file($_FILES['img']['tmp_name'][$key], $upload_file);
+	if ($_FILES>0) {
  		$uploaded_images[] = $upload_file;
- 		echo $insert_sql = "INSERT INTO `press`(`image_year`,`image`,`img_desc`) VALUES ('$year','$filename','$event')";
- 		exit;
-		//$data = mysqli_query($con, $insert_sql);
+		 $name = basename($_FILES["img"]["name"][$key]);
+ 		$insert_sql = "INSERT INTO `press`(`image_year`,`image`,`img_desc`) VALUES ('$year','$filename','$event')";
+ 		// exit;
+		$data = mysqli_query($con, $insert_sql);
          
  	}
 }
-exit;
+// exit;
  
  if($data){
          echo "<script> alert('inserted successfully'); </script>";
@@ -110,7 +113,7 @@ exit;
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 
 									<div class="panel-body">
-<form method="post" class="form-horizontal" enctype="multipart/form-data">
+<form method="POST" class="form-horizontal" enctype="multipart/form-data">
 										
 <div class="form-group">
 <div class="col-sm-12">
