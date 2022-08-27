@@ -22,13 +22,13 @@ if(isset($_POST['submit']))
  	
 	if(move_uploaded_file($_FILES['img']['tmp_name'][$key],$upload_file)){
  		$uploaded_images[] = $upload_file;
- 		$insert_sql = "INSERT INTO `press`(`image_year`,`image`,`img_desc`) VALUES ('$year','$filename','$event')";
- 		//exit;
-		$data = mysqli_query($con, $insert_sql);
+ 		echo $insert_sql = "INSERT INTO `press`(`image_year`,`image`,`img_desc`) VALUES ('$year','$filename','$event')";
+ 		exit;
+		//$data = mysqli_query($con, $insert_sql);
          
  	}
 }
-//exit;
+exit;
  
  if($data){
          echo "<script> alert('inserted successfully'); </script>";
