@@ -6,7 +6,7 @@
     text-align: center;
     width: 100%;
     font-family: cursive;
-    font-weight: 600;" class="text-white"><span style="margin-left: 470px; font-size: 30px;"><b style="font-family: 'FontAwesome';"><img src="../images/logo_sri.png" style="width:60px;"/> Srinath Public School</b></span></a>  
+    font-weight: 600;" class="text-white"><span style="margin-left: 470px; font-size: 30px;"><b style="font-family: 'FontAwesome';"><img src="../images/logo_sri.png" style="width:60px;"/> Hemkund Public School</b></span></a>  
 		<span class="menu-btn"><i class="fa fa-bars"></i></span>
 		<ul class="ts-profile-nav">
 			
