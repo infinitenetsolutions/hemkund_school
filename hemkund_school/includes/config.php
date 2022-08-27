@@ -16,11 +16,20 @@ if(!$con)
 //     </script>
 //     ";
 // }
-
+if ($_SERVER['HTTP_HOST'] == 'localhost') {
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
 define('DB_NAME','hemkund_school');
+}
+else
+{
+define('DB_HOST','localhost');
+define('DB_USER','hemkundschool2022_hemkundschool_db');
+define('DB_PASS','Hemkundschool@2022');
+define('DB_NAME','hemkundschool2022_hemkundschool_db');
+}
+
 // Establish database connection.
 try
 {
@@ -30,4 +39,3 @@ catch (PDOException $e)
 {
 exit("Error: " . $e->getMessage());
 }
-?>
