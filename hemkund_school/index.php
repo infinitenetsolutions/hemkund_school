@@ -64,7 +64,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 						
 						<div class="well row pt-2x pb-3x bk-light">
 							<div class="col-md-10" style="margin-left: 50px;">
-                            <img src="../images/logo_sri.png" style="width:90px;margin-left: 30%;">
+                            <img src="img/hem-logo1.png" style="width:30%;margin-left: 30%;">
                             <h1 class="text-center text-bold text-light ">Hemkund Public School</h1>
                              <span class="text-center text-bold text-light " style="font-size: 30px;"><b style="font-family: 'FontAwesome';margin-left: 20%;"> Admin Login</b></span>
 								<form method="post">
