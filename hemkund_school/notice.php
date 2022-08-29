@@ -117,7 +117,7 @@ foreach($results as $result)
 											<td><?php echo htmlentities($cnt);?></td>
 											<td><?php echo htmlentities($result->heading);?></td>
 											<td><?php echo htmlentities($result->desi);?></td>
-											<td><a target="blank" href="./img/vehicleimages/<?php echo htmlentities($result->image);?>">Pdf</a></td>
+											<td><a target="blank" href="./img/vehicleimages/<?php echo htmlentities($result->image);?>"><i class="fa fa-eye"></i></a></td>
 											<td><a href="edit-notice.php?id=<?php echo $result->id;?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
 												<a href="notice.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 										</tr>
