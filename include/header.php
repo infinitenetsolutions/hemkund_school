@@ -181,7 +181,7 @@ width:295px;
  <!--whatsapp-->
 <a id="visionId" href="https://api.whatsapp.com/send?phone=8541026773&text=&source=&data=" target="_blank" class="float-vision" title="Call Now" style="z-index: 99999;">
             <i class="fa fa-whatsapp my-float-vision" style="color:white;"></i>
-
+ 
         </a>
 <!--// whatsapp-->
 
