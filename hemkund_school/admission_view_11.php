@@ -1,5 +1,6 @@
 <?php
-$con = mysqli_connect('localhost','srinathschool_db','Srinath@123','srinathschool_db');
+// $con = mysqli_connect('localhost','hemkundschool2022_hemkundschool_db','Hemkundschool@2022','hemkundschool2022_hemkundschool_db');
+include('includes/config.php');
 $id = $_GET['id'];
 //print_r($id);
 //exit();

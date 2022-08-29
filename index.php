@@ -403,7 +403,7 @@ include './include/header.php';
 
                         <p><?php  echo substr($st,0,355);?></p>
                                                             <div class="ttm-btn-box pr-20 pb-20">
-                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-shape-round ttm-btn-style-fill ttm-icon-btn-right ttm-btn-color-skincolor" href="principal-disk.php" title="">Read More <i class="ti ti-arrow-circle-right"></i></a>
+                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-shape-round ttm-btn-style-fill ttm-icon-btn-right ttm-btn-color-skincolor" href="principal-desk.php" title="">Read More <i class="ti ti-arrow-circle-right"></i></a>
                         </div>
                         
                         <div class="mt-40 mb-30">

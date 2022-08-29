@@ -1,5 +1,6 @@
 <?php
-$con = mysqli_connect('localhost','srinathschool_db','Srinath@123','srinathschool_db');
+// $con = mysqli_connect('localhost','srinathschool_db','Srinath@123','srinathschool_db');
+include('includes/config.php');
 $id = $_GET['id'];
 //print_r($id);
 //exit();
@@ -74,7 +75,7 @@ $id = $_GET['id'];
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6 m-auto text-center">
-                            <img src="https://srinathschool.com/images/logo-img.png" style="width:400px;" />
+                            <img src="../images/hem-logo1.png" style="width:80px;" />
                             <!-- <h1 class="text-center">SRINATH PUBLIC SCHOOL</h1> -->
                             <!-- <h5 class="text-center">( A Unit of Sandhya Sambhu Educational Trust )</h5>
                             <h5 class="text-center">(Affiliated to CBSE, New Delhi, Affiliation No : 3430390, School Code : 66595)</h5>
