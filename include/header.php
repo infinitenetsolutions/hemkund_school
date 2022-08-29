@@ -13,6 +13,11 @@ if($result){
 echo "<script> alert('data inserted successfully');</script>";
 }
 } 
+
+    $sql = "SELECT * from  contact";
+     $res = mysqli_query($conn, $sql);
+     $result1 = mysqli_fetch_assoc($res);
+
 ?>
 
 
@@ -174,16 +179,11 @@ width:295px;
 <body>
 
  <!--whatsapp-->
-<a id="visionId" href="https://api.whatsapp.com/send?phone=918986626046&text=&source=&data=" target="_blank" class="float-vision" title="Call Now" style="z-index: 99999;">
+<a id="visionId" href="https://api.whatsapp.com/send?phone=8541026773&text=&source=&data=" target="_blank" class="float-vision" title="Call Now" style="z-index: 99999;">
             <i class="fa fa-whatsapp my-float-vision" style="color:white;"></i>
-<!--            <blink><div class="" style="color: #FFF; background: #c70013; opacity: 0.8; display: table-cell; vertical-align: middle; padding: 10px; border-radius: 3px; position: fixed; width: 8.5em; height: 3.0em; bottom: 14.7em; left: 5.5em;">Call Now</div></blink>-->
+
         </a>
 <!--// whatsapp-->
-
-<!--Enquiry form data get-->
-
-
-
 
 <?php
 //  include "config.php";
@@ -205,10 +205,10 @@ width:295px;
                        <div class="col-xl-12 d-flex flex-row align-items-center" style="padding-top: 15px;">
                            
                            <div class="top_bar_contact_item">
-                               <div class="top_bar_icon"><i class="fa fa-phone"></i></div><a href="tel:0657-22383114">0657-22383114</a> / <a href="tel:8986626046">8986626046</a>
+                               <div class="top_bar_icon"><i class="fa fa-phone"></i></div><a href="tel:<?php echo $result1['phone'];  ?>"><?php echo $result1['phone'];  ?></a> 
                            </div>
                            <div class="top_bar_contact_item">
-                               <div class="top_bar_icon"><i class="fa fa-envelope-o"></i></div><a href="mailto:hemkundpublicschool@gmail.com">hemkundpublicschool@gmail.com</a>
+                               <div class="top_bar_icon"><i class="fa fa-envelope-o"></i></div><a href="mailto:<?php echo $result1['email'];  ?>"><?php echo $result1['email'];  ?></a>
                            </div>
                            <div class="top_bar_contact_item ml-auto">
                                <!--<a href="admission.php">Online Admission</a>-->

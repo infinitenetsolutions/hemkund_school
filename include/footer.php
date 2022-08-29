@@ -1,4 +1,9 @@
-
+<?php 
+     include './include/db1.php';
+     $sql = "SELECT * from  contact";
+     $res = mysqli_query($conn, $sql);
+     $result = mysqli_fetch_assoc($res);
+?>
 
 
 
@@ -50,9 +55,9 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 widget-area">
                         <div class="widget style2 widget-out-link clearfix">
                            <h3 class="widget-title">Our Location</h3>
-                           <p>DINDLI- ADITYAPUR- PO- ADITYAPUR- DIST- SERAIKELA-KHARSAWAN -831013</p>
-                          <p>hemkundpublicschool@gmail.com </p>
-                          <p>+91 089866 26046</p>
+                           <p><?php echo $result['addr']; ?></p>
+                          <p><?php echo $result['email']; ?></p>
+                          <p>+91 <?php echo $result['phone'];?></p>
                         </div>
                     </div>
  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
