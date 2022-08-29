@@ -324,7 +324,7 @@ width:295px;
                                                   <li><a href="principal-desk.php">Principal's Desk</a></li>
            <li><a href="staff.php" >Teacher Profile</a></li>
            
-            <li><a href="certificate.php">Certificate</a></li>
+            <!-- <li><a href="certificate.php">Certificate</a></li> -->
             <li><a href="infrastructure.php">Infrastructure</a></li>
             
                  

@@ -18,7 +18,7 @@
 						<li><a href="chair_man.php">Chairman's Message</a></li>
 						<li><a href="principal.php">Principal's Desk</a></li>
                         <li><a href="staff.php">Teacher Profile</a></li>
-                        <li><a href="vision.php">Certificate</a></li>
+                        <!-- <li><a href="vision.php">Certificate</a></li> -->
                         <li><a href="infrastructure.php">Infrastructure</a></li>
                         <li><a href="rules.php">Rules & Regulation</a></li>
                         <li><a href="job_application.php">Job Application</a></li>
