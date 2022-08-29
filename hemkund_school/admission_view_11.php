@@ -103,32 +103,32 @@ $data = mysqli_fetch_assoc($result);
                                         <div class="col-md-4 col-sm-12">
 
                                             <label class="label">Name of Student</label>
-                                            <input type="text" name="name" value="<?php echo $data[name];?>" class="form-control" placeholder="Name of Student" readonly>
+                                            <input type="text" name="name" value="<?php echo $data['name'];?>" class="form-control" placeholder="Name of Student" readonly>
 
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <label class="label">Date of Birth</label>
-                                            <input type="date" name="dob" class="form-control" value="<?php echo $data[dob];?>" readonly>
+                                            <input type="date" name="dob" class="form-control" value="<?php echo $data['dob'];?>" readonly>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <label class="label">Religion</label>
-                                            <input type="text" name="religion" class="form-control" value="<?php echo $data[religion];?>" placeholder="Religion" readonly>
+                                            <input type="text" name="religion" class="form-control" value="<?php echo $data['religion'];?>" placeholder="Religion" readonly>
                                             <!--<select name="religion" class="form-control" readonly>
 											<option value="#" disabled="">Select Religion</option>
-											<option value="hindu" <?php echo ($data[religion] == 'hindu')?"selected":"" ?>>Hindu</option>
-											<option value="muslim" <?php echo ($data[religion] == 'muslim')?"selected":"" ?>>Muslim</option>
-											<option value="sikh" <?php echo ($data[religion] == 'sikh')?"selected":"" ?>>Sikh</option>
-											<option value="christian" <?php echo ($data[religion] == 'christian')?"selected":"" ?>>Christian</option>
-											<option value="other" <?php echo ($data[religion] == 'other')?"selected":"" ?>>Other</option>
+											<option value="hindu" <?php echo ($data['religion'] == 'hindu')?"selected":"" ?>>Hindu</option>
+											<option value="muslim" <?php echo ($data['religion'] == 'muslim')?"selected":"" ?>>Muslim</option>
+											<option value="sikh" <?php echo ($data['religion'] == 'sikh')?"selected":"" ?>>Sikh</option>
+											<option value="christian" <?php echo ($data['religion'] == 'christian')?"selected":"" ?>>Christian</option>
+											<option value="other" <?php echo ($data['religion'] == 'other')?"selected":"" ?>>Other</option>
 											</select>-->
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <label class="label">Nationality</label>
-                                            <input type="text" name="nationality" class="form-control" placeholder="Nationality" value="<?php echo $data[nationality];?>" readonly>
+                                            <input type="text" name="nationality" class="form-control" placeholder="Nationality" value="<?php echo $data['nationality'];?>" readonly>
                                             <!--<select name="nationality" class="form-control" required="">
 											  <option value="#" disabled="">Select Nationality</option>
-											  <option value="indian" <?php echo ($data[nationality] == 'hindu')?"selected":"" ?>>Indian</option>
-											  <option value="nri" <?php echo ($data[nationality] == 'hindu')?"selected":"" ?>>NRI</option>
+											  <option value="indian" <?php echo ($data['nationality'] == 'hindu')?"selected":"" ?>>Indian</option>
+											  <option value="nri" <?php echo ($data['nationality'] == 'hindu')?"selected":"" ?>>NRI</option>
 											 </select>-->
                                         </div>
 
@@ -146,11 +146,11 @@ $data = mysqli_fetch_assoc($result);
                                     <div class="row">
                                         <div class="col-md-4 col-sm-12">
                                             <label class="label">Father's Name</label>
-                                            <input type="text" name="fname" class="form-control" placeholder="Father's Name" readonly value="<?php echo $data[fname];?>">
+                                            <input type="text" name="fname" class="form-control" placeholder="Father's Name" readonly value="<?php echo $data['fname'];?>">
                                         </div>
                                         <div class="col-md-4">
                                             <label class="label">Mother's Name</label>
-                                            <input type="text" name="mname" class="form-control" placeholder="Mother's Name" readonly value="<?php echo $data[mname];?>">
+                                            <input type="text" name="mname" class="form-control" placeholder="Mother's Name" readonly value="<?php echo $data['mname'];?>">
                                         </div>
                                     </div>
                                 </div>
@@ -165,17 +165,17 @@ $data = mysqli_fetch_assoc($result);
                                     <div class="row">
                                         <div class="col-md-4 col-sm-12">
                                             <label class="label">Full Address of Father/Guardian</label>
-                                            <textarea name="address" class="form-control" rows="3" placeholder="Full Address of Father/Guardian" readonly> <?php echo $data[address];?></textarea>
+                                            <textarea name="address" class="form-control" rows="3" placeholder="Full Address of Father/Guardian" readonly> <?php echo $data['address'];?></textarea>
                                         </div>
 
                                         <div class="col-md-4 col-sm-12">
                                             <label class="label">Year of Passing Class X</label>
-                                            <input type="text" name="year" class="form-control" rows="3" placeholder="Year of Passing Class X" readonly value="<?php echo $data[year];?>">
+                                            <input type="text" name="year" class="form-control" rows="3" placeholder="Year of Passing Class X" readonly value="<?php echo $data['year'];?>">
                                         </div>
 
                                         <div class="col-md-4 col-sm-12">
                                             <label class="label">Name of Board</label>
-                                            <input type="text" name="board" class="form-control" placeholder="Name of Board" readonly value="<?php echo $data[board];?>">
+                                            <input type="text" name="board" class="form-control" placeholder="Name of Board" readonly value="<?php echo $data['board'];?>">
                                         </div>
                                     </div>
                                 </div>
@@ -197,56 +197,57 @@ $data = mysqli_fetch_assoc($result);
                                                               $e_per=$h_per=$m_per=$gs_per=$ss_per=$sn_per=0;
                                                               $e_med=$h_med=$m_med=$gs_med=$ss_med=$sn_med=0;
                                                               $e_agg=$h_agg=$m_agg=$gs_agg=$ss_agg=$sn_agg=0;
-                                                              $query1 = "SELECT * FROM `marks` WHERE `student_id`='$data[id]'";
+                                                              $idd1 = $data['id'];
+                                                              $query1 = "SELECT * FROM `marks` WHERE `student_id`='$idd1'";
                                                               $result1 = mysqli_query($con , $query1);
                                                               while($data1 = mysqli_fetch_assoc($result1)){ 
-                                                              if($data1[subject] == 'English')
+                                                              if($data1['subject'] == 'English')
                                                               {
-                                                              	$e_max= $data1[max_marks];
-                                                              	$e_ob= $data1[marks_obtain];
-                                                              	$e_per= $data1[per_marks];
-                                                              	$e_med= $data1[exam_medium];
-                                                              	$e_agg= $data1[aggregate];
+                                                              	$e_max= $data1['max_marks'];
+                                                              	$e_ob= $data1['marks_obtain'];
+                                                              	$e_per= $data1['per_marks'];
+                                                              	$e_med= $data1['exam_medium'];
+                                                              	$e_agg= $data1['aggregate'];
                                                               }                                                              
-                                                              if($data1[subject] == 'Hindi')
+                                                              if($data1['subject'] == 'Hindi')
                                                               {
-                                                              	$h_max= $data1[max_marks];
-                                                                $h_ob= $data1[marks_obtain];
-                                                              	$h_per= $data1[per_marks];
-                                                              	$h_med= $data1[exam_medium];
-                                                              	$h_agg= $data1[aggregate];
+                                                              	$h_max= $data1['max_marks'];
+                                                                $h_ob= $data1['marks_obtain'];
+                                                              	$h_per= $data1['per_marks'];
+                                                              	$h_med= $data1['exam_medium'];
+                                                              	$h_agg= $data1['aggregate'];
                                                               }
-                                                              if($data1[subject] == 'Maths')
+                                                              if($data1['subject'] == 'Maths')
                                                               {
-                                                              	$m_max= $data1[max_marks];
-                                                                $m_ob= $data1[marks_obtain];
-                                                              	$m_per= $data1[per_marks];
-                                                              	$m_med= $data1[exam_medium];
-                                                              	$m_agg= $data1[aggregate];
+                                                              	$m_max= $data1['max_marks'];
+                                                                $m_ob= $data1['marks_obtain'];
+                                                              	$m_per= $data1['per_marks'];
+                                                              	$m_med= $data1['exam_medium'];
+                                                              	$m_agg= $data1['aggregate'];
                                                               }
-                                                              if($data1[subject] == 'Gen Science')
+                                                              if($data1['subject'] == 'Gen Science')
                                                               {
-                                                              	$gs_max= $data1[max_marks];
-                                                                $gs_ob= $data1[marks_obtain];
-                                                              	$gs_per= $data1[per_marks];
-                                                              	$gs_med= $data1[exam_medium];
-                                                              	$gs_agg= $data1[aggregate];
+                                                              	$gs_max= $data1['max_marks'];
+                                                                $gs_ob= $data1['marks_obtain'];
+                                                              	$gs_per= $data1['per_marks'];
+                                                              	$gs_med= $data1['exam_medium'];
+                                                              	$gs_agg= $data1['aggregate'];
                                                               }
-                                                              if($data1[subject] == 'Social Science')
+                                                              if($data1['subject'] == 'Social Science')
                                                               {
-                                                              	$ss_max= $data1[max_marks];
-                                                                $ss_ob= $data1[marks_obtain];
-                                                              	$ss_per= $data1[per_marks];
-                                                              	$ss_med= $data1[exam_medium];
-                                                              	$ss_agg= $data1[aggregate];
+                                                              	$ss_max= $data1['max_marks'];
+                                                                $ss_ob= $data1['marks_obtain'];
+                                                              	$ss_per= $data1['per_marks'];
+                                                              	$ss_med= $data1['exam_medium'];
+                                                              	$ss_agg= $data1['aggregate'];
                                                               }
-                                                              if($data1[subject] == 'Sanskrit')
+                                                              if($data1['subject'] == 'Sanskrit')
                                                               {
-                                                              	$sn_max= $data1[max_marks];
-                                                                $sn_ob= $data1[marks_obtain];
-                                                              	$sn_per= $data1[per_marks];
-                                                              	$sn_med= $data1[exam_medium];
-                                                              	$sn_agg= $data1[aggregate];
+                                                              	$sn_max= $data1['max_marks'];
+                                                                $sn_ob= $data1['marks_obtain'];
+                                                              	$sn_per= $data1['per_marks'];
+                                                              	$sn_med= $data1['exam_medium'];
+                                                              	$sn_agg= $data1['aggregate'];
                                                               }
                                                               }
                                                             ?>
@@ -368,27 +369,27 @@ $data = mysqli_fetch_assoc($result);
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-12">
                                                     <label class="label">i) Subject One</label>
-                                                    <input type="text" name="subject_desired1" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data[subject_desired1];?>">
+                                                    <input type="text" name="subject_desired1" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data['subject_desired1'];?>">
                                                 </div>
                                                 <div class="col-md-6 col-sm-12">
                                                     <label class="label">ii) Subject Two</label>
-                                                    <input type="text" name="subject_desired2" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data[subject_desired2];?>">
+                                                    <input type="text" name="subject_desired2" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data['subject_desired2'];?>">
                                                 </div>
                                                 <div class="col-md-6 col-sm-12">
                                                     <label class="label">iii) Subject Three</label>
-                                                    <input type="text" name="subject_desired3" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data[subject_desired3];?>">
+                                                    <input type="text" name="subject_desired3" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data['subject_desired3'];?>">
                                                 </div>
                                                 <div class="col-md-6 col-sm-12">
                                                     <label class="label">iv) Subject Four</label>
-                                                    <input type="text" name="subject_desired4" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data[subject_desired4];?>">
+                                                    <input type="text" name="subject_desired4" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data['subject_desired4'];?>">
                                                 </div>
                                                 <div class="col-md-6 col-sm-12">
                                                     <label class="label">v) Subject Five</label>
-                                                    <input type="text" name="subject_desired5" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data[subject_desired5];?>">
+                                                    <input type="text" name="subject_desired5" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data['subject_desired5'];?>">
                                                 </div>
                                                 <div class="col-md-6 col-sm-12">
                                                     <label class="label">vi) Subject Six</label>
-                                                    <input type="text" name="subject_desired6" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data[subject_desired6];?>">
+                                                    <input type="text" name="subject_desired6" class="form-control" placeholder="Subject Name" readonly value="<?php echo $data['subject_desired6'];?>">
                                                 </div>
                                             </div>
                                         </div>
@@ -403,67 +404,67 @@ $data = mysqli_fetch_assoc($result);
                                             <div class="row">
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Occupation of Father </label>
-                                                    <input type="text" name="father_occp" class="form-control" placeholder="Occupation of Father" readonly value="<?php echo $data[father_occp];?>">
+                                                    <input type="text" name="father_occp" class="form-control" placeholder="Occupation of Father" readonly value="<?php echo $data['father_occp'];?>">
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Designation (If in service) </label>
-                                                    <input type="text" name="father_desig" class="form-control" placeholder="Designation (If in service)" readonly value="<?php echo $data[father_desig];?>">
+                                                    <input type="text" name="father_desig" class="form-control" placeholder="Designation (If in service)" readonly value="<?php echo $data['father_desig'];?>">
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Annual Income (Rs) </label>
-                                                    <input type="text" name="father_annual" class="form-control" placeholder="Annual Income (Rs)" readonly value="<?php echo $data[father_annual];?>">
+                                                    <input type="text" name="father_annual" class="form-control" placeholder="Annual Income (Rs)" readonly value="<?php echo $data['father_annual'];?>">
                                                     <!--<select name="father_annual" class="form-control" required="">
 													  <option value="#" disabled="">Select Father's Annual Income (Rs)</option>
-													  <option value="1-2lakh" <?php echo ($data[father_annual] == '1-2lakh')?"selected":"" ?>>1 lakh - 2 Lakh</option>
-													  <option value="2-3lakh" <?php echo ($data[father_annual] == '2-3lakh')?"selected":"" ?>>2 lakh - 3 Lakh</option>
-													  <option value="3-4lakh" <?php echo ($data[father_annual] == '3-4lakh')?"selected":"" ?>>3 lakh - 4 Lakh</option>
-													  <option value="4-5lakh" <?php echo ($data[father_annual] == '4-5lakh')?"selected":"" ?>>4 lakh - 5 Lakh</option>
-													  <option value="5lakh-above" <?php echo ($data[father_annual] == '5lakh-above')?"selected":"" ?>>5 lakh - Above</option>
+													  <option value="1-2lakh" <?php echo ($data['father_annual'] == '1-2lakh')?"selected":"" ?>>1 lakh - 2 Lakh</option>
+													  <option value="2-3lakh" <?php echo ($data['father_annual'] == '2-3lakh')?"selected":"" ?>>2 lakh - 3 Lakh</option>
+													  <option value="3-4lakh" <?php echo ($data['father_annual'] == '3-4lakh')?"selected":"" ?>>3 lakh - 4 Lakh</option>
+													  <option value="4-5lakh" <?php echo ($data['father_annual'] == '4-5lakh')?"selected":"" ?>>4 lakh - 5 Lakh</option>
+													  <option value="5lakh-above" <?php echo ($data['father_annual'] == '5lakh-above')?"selected":"" ?>>5 lakh - Above</option>
 													 </select>-->
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Occupation of Mother </label>
-                                                    <input type="text" name="mother_occp" class="form-control" placeholder="Occupation of Mother" readonly value="<?php echo $data[mother_occp];?>">
+                                                    <input type="text" name="mother_occp" class="form-control" placeholder="Occupation of Mother" readonly value="<?php echo $data['mother_occp'];?>">
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Designation (If in service) </label>
-                                                    <input type="text" name="mother_desig" class="form-control" placeholder="Designation (If in service)" readonly value="<?php echo $data[mother_desig];?>">
+                                                    <input type="text" name="mother_desig" class="form-control" placeholder="Designation (If in service)" readonly value="<?php echo $data['mother_desig'];?>">
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Annual Income (Rs) </label>
-                                                    <input type="text" name="mother_annual" class="form-control" placeholder="Annual Income (Rs)" value="<?php echo $data[mother_annual];?>" readonly>
+                                                    <input type="text" name="mother_annual" class="form-control" placeholder="Annual Income (Rs)" value="<?php echo $data['mother_annual'];?>" readonly>
                                                     <!--<select name="mother_annual" class="form-control" required="">
 													  <option value="#" disabled="">Select Mother's Annual Income (Rs)</option>
-													  <option value="1-2lakh" <?php echo ($data[mother_annual] == '1-2lakh')?"selected":"" ?>>1 lakh - 2 Lakh</option>
-													  <option value="2-3lakh" <?php echo ($data[mother_annual] == '2-3lakh')?"selected":"" ?>>2 lakh - 3 Lakh</option>
-													  <option value="3-4lakh" <?php echo ($data[mother_annual] == '3-4lakh')?"selected":"" ?>>3 lakh - 4 Lakh</option>
-													  <option value="4-5lakh" <?php echo ($data[mother_annual] == '4-5lakh')?"selected":"" ?>>4 lakh - 5 Lakh</option>
-													  <option value="5lakh-above" <?php echo ($data[mother_annual] == '5lakh-above')?"selected":"" ?>>5 lakh - Above</option>
+													  <option value="1-2lakh" <?php echo ($data['mother_annual'] == '1-2lakh')?"selected":"" ?>>1 lakh - 2 Lakh</option>
+													  <option value="2-3lakh" <?php echo ($data['mother_annual'] == '2-3lakh')?"selected":"" ?>>2 lakh - 3 Lakh</option>
+													  <option value="3-4lakh" <?php echo ($data['mother_annual'] == '3-4lakh')?"selected":"" ?>>3 lakh - 4 Lakh</option>
+													  <option value="4-5lakh" <?php echo ($data['mother_annual'] == '4-5lakh')?"selected":"" ?>>4 lakh - 5 Lakh</option>
+													  <option value="5lakh-above" <?php echo ($data['mother_annual'] == '5lakh-above')?"selected":"" ?>>5 lakh - Above</option>
 													 </select>-->
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Phone No. </label>
-                                                    <input type="text" name="phone" class="form-control" placeholder="Phone No." readonly value="<?php echo $data[phone];?>">
+                                                    <input type="text" name="phone" class="form-control" placeholder="Phone No." readonly value="<?php echo $data['phone'];?>">
                                                 </div>
 
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Permanent Address </label>
-                                                    <textarea name="perma_address" class="form-control" placeholder="Permanent Address" readonly><?php echo $data[perma_address];?></textarea>
+                                                    <textarea name="perma_address" class="form-control" placeholder="Permanent Address" readonly><?php echo $data['perma_address'];?></textarea>
                                                 </div>
 
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Mother Tounge of the student </label>
-                                                    <input type="text" name="language" class="form-control" placeholder="Mother Tounge of the student" readonly value="<?php echo $data[language];?>">
+                                                    <input type="text" name="language" class="form-control" placeholder="Mother Tounge of the student" readonly value="<?php echo $data['language'];?>">
                                                 </div>
 
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">Other Language Known </label>
-                                                    <input type="text" name="other_lang" class="form-control" placeholder="Other Language Known" value="<?php echo $data[other_lang];?>" readonly>
+                                                    <input type="text" name="other_lang" class="form-control" placeholder="Other Language Known" value="<?php echo $data['other_lang'];?>" readonly>
                                                 </div>
 
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="label">If suffering from any disease </label>
-                                                    <input type="text" name="disease" class="form-control" placeholder="If suffering from any disease" value="<?php echo $data[disease];?>" readonly>
+                                                    <input type="text" name="disease" class="form-control" placeholder="If suffering from any disease" value="<?php echo $data['disease'];?>" readonly>
                                                 </div>
                                                 
                                             </div>
@@ -479,19 +480,19 @@ $data = mysqli_fetch_assoc($result);
                                             <div class="row">
                                                 <div class="col-md-3 col-sm-12">
                                                     <label class="label">i) Enter Brother/Sister Name:</label>
-                                                    <input type="text" name="sibling_name1" class="form-control" placeholder="Enter Name" value="<?php echo $data[sibling_name1];?>" readonly>
+                                                    <input type="text" name="sibling_name1" class="form-control" placeholder="Enter Name" value="<?php echo $data['sibling_name1'];?>" readonly>
                                                 </div>
                                                 <div class="col-md-3 col-sm-12">
                                                     <label class="label">ii)  Enter Brother/Sister Name:</label>
-                                                    <input type="text" name="sibling_name2" class="form-control" placeholder="Enter Name" value="<?php echo $data[sibling_name2];?>" readonly>
+                                                    <input type="text" name="sibling_name2" class="form-control" placeholder="Enter Name" value="<?php echo $data['sibling_name2'];?>" readonly>
                                                 </div>
                                                 <div class="col-md-3 col-sm-12">
                                                     <label class="label">iii)  Enter Brother/Sister Name:</label>
-                                                    <input type="text" name="sibling_name3" class="form-control" placeholder="Enter Name" value="<?php echo $data[sibling_name3];?>" readonly>
+                                                    <input type="text" name="sibling_name3" class="form-control" placeholder="Enter Name" value="<?php echo $data['sibling_name3'];?>" readonly>
                                                 </div>
                                                 <div class="col-md-3 col-sm-12">
                                                     <label class="label">iv)  Enter Brother/Sister Name:</label>
-                                                    <input type="text" name="sibling_name4" class="form-control" placeholder="Enter Name" value="<?php echo $data[sibling_name4];?>" readonly>
+                                                    <input type="text" name="sibling_name4" class="form-control" placeholder="Enter Name" value="<?php echo $data['sibling_name4'];?>" readonly>
                                                 </div>
                                             </div>
                                         </div>
@@ -531,7 +532,7 @@ $data = mysqli_fetch_assoc($result);
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-12">
                                                     <p style="display: inline-flex;"> a) I do hereby declare that the information furnished in respect of my son / daughter / ward &nbsp;
-                                                        <input type="text" class="form-control" name="ward_name" style="width:200px;" placeholder="Enter Your Ward Name" value="<?php echo $data[ward_name];?>" readonly> &nbsp;is true of my knowledge &amp; belief.
+                                                        <input type="text" class="form-control" name="ward_name" style="width:200px;" placeholder="Enter Your Ward Name" value="<?php echo $data['ward_name'];?>" readonly> &nbsp;is true of my knowledge &amp; belief.
                                                     </p>
                                                     <p>b) I shall abide by the rules of the school .</p>
                                                     <p>c) If my ward commits any kind of indiscipline he/she may be expelled / punished by the school.</p>

@@ -54,10 +54,10 @@ if(isset($_POST['submit1']))
     VALUES ('$name', '$dob','$religion','$nationality','$fname','$mname','$address','$year','$board','$subject_desired1','$subject_desired2','$subject_desired3','$subject_desired4','$subject_desired5','$subject_desired6','$father_occp','$mother_occp','$father_desig','$mother_desig','$father_annual','$mother_annual','$phone','$perma_address','$language','$other_lang','$disease','$sibling_name1','$sibling_name2','$sibling_name3','$sibling_name4','$ward_name','$transfer_certificate','$character_certificate','$marks_sheet','$birth_certificate','$medical_certificate','$activities')";
              //print_r($_POST);exit();
             // echo $sql1;exit();
-	$result = mysqli_query($connection , $sql1);
+	$result = mysqli_query($conn , $sql1);
     if($result)
     {
-        $last_id = $connection->insert_id;
+        $last_id = $conn->insert_id;
        // echo $last_id;
       for ($i=0; $i<count($_POST['subject']); $i++)
       {
@@ -70,7 +70,7 @@ if(isset($_POST['submit1']))
         $qry1="INSERT INTO marks (`subject`,`max_marks`,`marks_obtain`,`per_marks`,`exam_medium`,`aggregate`,`student_id`) 
         VALUES ('$subject','$max','$obtained','$percent','$medium','$aggregate','$last_id')";
 
-        $result1=mysqli_query($connection,$qry1);
+        $result1=mysqli_query($conn,$qry1);
         }
         }
         if($result1)
