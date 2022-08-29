@@ -86,7 +86,7 @@ $msg="Discipline Rules Info Updated successfully";
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading">Form fields</div>
+									<div class="panel-heading" style="background: #d66431!important;color: #fff;">Form fields</div>
 									<div class="panel-body">
 										<form method="POST" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
 										
@@ -94,7 +94,7 @@ $msg="Discipline Rules Info Updated successfully";
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 											<?php
-                                            include "config.php";
+                                            
                                             $sql = "SELECT * from  discipline";
                                             $query = mysqli_query($con, $sql);
                                             $result = mysqli_fetch_assoc($query);

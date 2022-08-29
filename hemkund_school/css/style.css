@@ -109,9 +109,11 @@ a:hover {
   background: #29abe0;
 }
 .bk-white,
-.bk-light {
+/*.bk-light {
   background: #101220;;
-}
+} */
+.bk-light {
+  background: #03ab7a; }
 .bk-brand {
   background: #37a6c4;
 }
@@ -753,3 +755,11 @@ li {
 background: #d66431!important;
     color: #fff;
     }
+.btn-block
+{
+	background-color:#d57211;
+}
+.btn-block:hover
+{
+	background-color:#d57211;
+}

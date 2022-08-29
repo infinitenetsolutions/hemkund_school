@@ -37,7 +37,7 @@ $connection = '';
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $connection = mysqli_connect('localhost','root','','srinathschool_db');
 } else {
-    $connection = mysqli_connect('localhost','srinathschool_db','Srinath@123','srinathschool_db');
+    $connection = mysqli_connect('localhost','hemkundschool2022_hemkundschool_db','Hemkundschool@2022','hemkundschool2022_hemkundschool_db');
 }
 //echo "<h1>EaseBuzz</h1>"; 
 // $chk_tx = $result["data"]["status"];

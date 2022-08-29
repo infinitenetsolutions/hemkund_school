@@ -85,7 +85,7 @@ $msg="Page data deleted successfully";
 
 						<h2 class="page-title">Manage Admission Details</h2>
 							<div class="panel panel-default">
-							<div class="panel-heading">Listed  Details 
+							<div class="panel-heading" style="background: #d66431!important;color: #fff;">Listed  Details 
                             <a href="export.php" style="
     position: absolute;
     right: 50px;

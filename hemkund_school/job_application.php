@@ -87,7 +87,7 @@ $msg="Page data updated  successfully";
 						<!--<a href="about_add.php" class="btn btn-info">Add New Details</a>-->
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Listed  Details</div>
+							<div class="panel-heading"  style="background: #d66431!important;color: #fff;">Listed  Details</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>

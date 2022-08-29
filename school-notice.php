@@ -61,8 +61,7 @@ include './include/db1.php';
                                 style="color: rgb(255, 255, 255)!important;
   									  background: rgb(19, 30, 60)!important;">
                                     <!--<p><?php echo $row['desi']?></p>-->
-                                    <!--<a target="blank" href="./srinath_school/img/vehicleimages/<?php echo  $row['image']?>" style="color:#fff;">Read Admission Notice</a>-->
-                                    <img src="./srinath_school/img/vehicleimages/<?php echo  $row['image']?>" style="width:100%;"/>
+                                    <img src="./hemkund_school/img/vehicleimages/<?php echo  $row['image']?>" style="width:100%;"/>
                                 </div>
                             </div><!-- toggle end -->
                             <?php } ?>

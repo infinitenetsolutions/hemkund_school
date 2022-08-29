@@ -56,7 +56,7 @@
                                     </div>
                                 </div>-->
                                 <div class="featured-thumbnail">
-                                    <img class="img-fluid" src="./srinath_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="height: 330px;width: 100%;"> 
+                                    <img class="img-fluid" src="./hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="height: 330px;width: 100%;"> 
                                 </div>
                             </div>
                             <div class="featured-content featured-content-team">

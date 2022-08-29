@@ -99,7 +99,7 @@ header('Location: slider.php');
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading">Edit Slider Details</div>
+									<div class="panel-heading" style="background: #d66431!important;color: #fff;">Edit Slider Details</div>
 									<div class="panel-body">
 										<form method="post" class="form-horizontal" enctype="multipart/form-data">
 										

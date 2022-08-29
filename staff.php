@@ -47,7 +47,7 @@
                         <!-- featured-imagebox-team -->
                         <div class="featured-imagebox featured-imagebox-team style2">
                             <div class="featured-thumbnail">
-                                <img class="img-fluid lazyload" data-src="./srinath_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="width:350px;height:400px;"> 
+                                <img class="img-fluid lazyload" data-src="./hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="width:350px;height:400px;"> 
                             </div>
                             <div class="featured-content featured-content-team">
                                 <div class="featured-title">

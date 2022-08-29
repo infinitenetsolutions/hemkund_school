@@ -78,11 +78,11 @@ echo $event;
                                             <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                                 <!-- featured-thumbnail -->
                                                 <div class="featured-thumbnail">
-                                                    <a href="#"> <img class="img-fluid" src="srinath_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="width: 100%;
+                                                    <a href="#"> <img class="img-fluid" src="hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="width: 100%;
     height: 270px;"></a>
                                                 </div><!-- featured-thumbnail end-->
                                                 <div class="featured-iconbox ttm-media-link">
-                                                    <a class="ttm_prettyphoto ttm_image" title="campus" data-rel="prettyPhoto" href="srinath_school/img/vehicleimages/<?php echo $row['image']; ?>">
+                                                    <a class="ttm_prettyphoto ttm_image" title="campus" data-rel="prettyPhoto" href="hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>">
                                                         <i class="fa fa-expand"></i>
                                                     </a>
                                                 </div>

@@ -105,33 +105,22 @@ foreach($results as $result)
 {				?>	
 
 				<div class="form-group">
-												<label class="col-sm-4 control-label">Message Title</label>
+												<label class="col-sm-4 control-label">Chairman's Namme</label>
 												<div class="col-sm-8">
 													<input type="text" class="form-control" value="<?php echo htmlentities($result->heading);?>" name="heading" id="heading" required>
 												</div>
 											</div>
 											<div class="form-group">
-												<label class="col-sm-4 control-label">Message</label>
+												<label class="col-sm-4 control-label">Chairman's Message</label>
 												<div class="col-sm-8">
-													<textarea class="form-control" name="msg" id="addr" required><?php echo htmlentities($result->msg);?></textarea>
-												</div>
+													<textarea class="form-control" name="msg" id="msg" required><?php echo htmlentities($result->msg);?></textarea>
+                                                </div>
 											</div>
-											<!--<div class="form-group">
-												<label class="col-sm-4 control-label"> Contact Number </label>
-												<div class="col-sm-8">
-													<input type="text" class="form-control" value="<?php echo htmlentities($result->phone);?>" name="phone" id="phone" required>
-												</div>
-											</div>-->
 <?php }} ?>
 											<div class="hr-dashed"></div>
-											
-										
-								
-											
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-4">
-								
-													<button class="btn btn-primary" name="submit" type="submit">Update</button>
+														<button class="btn btn-primary" name="submit" type="submit">Update</button>
 												</div>
 											</div>
 
@@ -163,6 +152,18 @@ foreach($results as $result)
 	<script src="js/fileinput.js"></script>
 	<script src="js/chartData.js"></script>
 	<script src="js/main.js"></script>
+  	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+  	<script type="text/javascript">
+            // Initialize CKEditor
+            //CKEDITOR.inline( 'short_desc' );
+
+            CKEDITOR.replace('msg', {
+
+                width: "600px",
+                height: "300px"
+
+            });
+        </script>
 
 </body>
 

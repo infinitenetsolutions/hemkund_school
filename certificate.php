@@ -94,10 +94,10 @@ div#block-hd {
                                                 <!-- featured-thumbnail -->
                                                 <div class="featured-thumbnail">
                                                 
-           								<a href="event_year.php?year=<?php echo $row['msg'] ?>"> <img class="img-fluid" src="srinath_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="width: 100%;height: 270px;"></a>
+           								<a href="event_year.php?year=<?php echo $row['msg'] ?>"> <img class="img-fluid" src="hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="width: 100%;height: 270px;"></a>
                                                 </div><!-- featured-thumbnail end-->
                                                 <div class="featured-iconbox ttm-media-link">
-                                                    <a class="ttm_prettyphoto ttm_image" title="campus" data-rel="prettyPhoto" href="srinath_school/img/vehicleimages/<?php echo $row['image']; ?>">
+                                                    <a class="ttm_prettyphoto ttm_image" title="campus" data-rel="prettyPhoto" href="hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>">
                                                         <i class="fa fa-expand"></i><a href="event_year.php?year=<?php echo $row['msg'] ?>"><i class="fa fa-image"></i></a>
                                                     </a>
                                                 </div>

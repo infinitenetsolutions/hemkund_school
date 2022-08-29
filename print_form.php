@@ -74,21 +74,11 @@ $data = mysqli_fetch_assoc($result);
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6 m-auto text-center">
-                            <img src="https://srinathschool.com/images/logo-img.png" style="width:400px;" />
-                            <!-- <h1 class="text-center">SRINATH PUBLIC SCHOOL</h1> -->
-                            <!-- <h5 class="text-center">( A Unit of Sandhya Sambhu Educational Trust )</h5>
-                            <h5 class="text-center">(Affiliated to CBSE, New Delhi, Affiliation No : 3430390, School Code : 66595)</h5>
-                            <h4 class="text-center"> Dindli, Adityapur, Seraikella-Kharsawan - 831013</h4>
-                            <h4 class="text-center"> Ph.:0657-2383114, 8986626046</h4> -->
+                            <img src="https://hemkundpublicschool.com/images/hemkund-logo.png" style="width:400px;" />
                             <h2 class="app-heading text-center"> APPLICATION FORM FOR REGISTRATION / ADMISSION</h2>
                             <h2 class="app-heading-two text-center"> Class - Nursery to VIII </h2>
                         </div>
-                        <!-- <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="">Home</a></li>
-                            </ol>
-                        </div> -->
-                    </div>
+                        </div>
                 </div>
             </section>
 

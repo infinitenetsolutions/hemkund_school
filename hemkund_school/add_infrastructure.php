@@ -111,10 +111,7 @@ $error="Something went wrong. Please try again";
 <div class="col-sm-12">
 <h4><b>Add Details</b></h4>
 </div>
-</div>
 
-
-<div class="form-group">
 <div class="col-sm-4">
 <label class="col-sm-4 control-label">Message</label>
 <div class="col-sm-8">

@@ -11,7 +11,7 @@ include './include/header.php';
 
 
 <div class="stick-right">
-                    <div class="d-load"><span><a download="download" href="./srinath_school/img/vehicleimages/download.pdf">Download Prospectus</a></span></div>
+                    <div class="d-load"><span><a download="download" href="./hemkund_school/img/vehicleimages/download.pdf">Download Prospectus</a></span></div>
       </div>
 
 
@@ -26,7 +26,7 @@ include './include/header.php';
       {
       ?>
             <div class="banner-slide">
-                <img class="img-fluid lazyload" data-src="./srinath_school/img/vehicleimages/<?php echo $row['img']; ?>" alt="slider-image"/>
+                <img class="img-fluid lazyload" data-src="./hemkund_school/img/vehicleimages/<?php echo $row['img']; ?>" alt="slider-image"/>
                 <div class="banner-caption">
                     <div class="info">
 
@@ -348,7 +348,7 @@ include './include/header.php';
                     <!-- featured-imagebox-course -->
                     <div class="featured-imagebox featured-imagebox-course">
                         <div class="ttm-post-thumbnail featured-thumbnail"> 
-                            <img class="img-fluid lazyload" data-src="./srinath_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="width:255px;height:228px;"> 
+                            <img class="img-fluid lazyload" data-src="./hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="width:255px;height:228px;"> 
                         </div>
                         <div class="featured-content featured-content-post">
                             <div class="featured-content-post-inner">
@@ -392,9 +392,7 @@ include './include/header.php';
                             </div>
                             <div class="heading-seperator"><span></span></div>
                         </div><!-- section title end -->
-                        <!-- <p> In the midst of the clamour of the pandemic and the gradual emergence of a new ‘normal’ in life, replete with its painstaking precautions and explicit safeguards… right in the thick of it all, the Srinath team continued to work at its own breakneck pace, to reorient its website and present it to all of you in its brand new apparel. We hope to be able to communicate better through our remodelled platform, as we add features in the days to come.
-                                                            </p> -->
-                                                            <?php   
+                                            <?php   
                                             $sql = "SELECT * from  pdesk";
                                             $query = mysqli_query($conn, $sql);
                                             $result = mysqli_fetch_assoc($query);
@@ -563,8 +561,7 @@ include './include/header.php';
                         <div class="testimonial-content">
                            
                             <div class="testimonial-caption">
-                            <img target="blank" src="./srinath_school/img/vehicleimages/<?php echo  $row['image']?>" style="width:50px;margin:0 auto;"/>
-                            <!--<a href="./srinath_school/img/vehicleimages/<?php echo  $row['image']?>" >Read Admission Notice</a>-->
+                            <img target="blank" src="./hemkund_school/img/vehicleimages/<?php echo  $row['image']?>" style="width:50px;margin:0 auto;"/>
                                 <!--<h5><?php echo  $row['heading']?></h5>-->
                                 
                             </div>
@@ -627,7 +624,7 @@ include './include/header.php';
                                                 <div class="testimonial-content">
                                                     <div class="testimonial-avatar">
                                                         <div class="testimonial-img">
-                                                            <img class="img-center lazyload" data-src="./srinath_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="testimonial-img">
+                                                            <img class="img-center lazyload" data-src="./hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="testimonial-img">
                                                         </div>
                                                     </div>
                                                     <blockquote><?php echo $row['description']; ?></blockquote>

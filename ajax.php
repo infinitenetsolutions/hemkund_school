@@ -1,10 +1,10 @@
  <?php
 error_reporting('E_ALL');
 $host = 'localhost';
-$db = 'srinathschool_new_db';
+$db = 'hemkundschool2022_hemkundschool_db';
 
-$user = 'srinathschool_new_db';
-$pass = 'TE5a8|p3F';
+$user = 'hemkundschool2022_hemkundschool_db';
+$pass = 'Hemkundschool@2022';
  
  echo 'done';
  

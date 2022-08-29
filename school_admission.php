@@ -51,8 +51,8 @@ $_SESSION["promoted_class"] = $promoted_class;
 $_SESSION["phone_no"] = $phone_no;
 $_SESSION["email"] = $email;
 
-$_SESSION["surl"] = "https://srinathschool.com/response.php";
-$_SESSION["surl"] = "https://srinathschool.com/response.php";    
+$_SESSION["surl"] = "https://hemkundpublicschool.com/response.php";
+$_SESSION["surl"] = "https://hemkundpublicschool.com/response.php";    
 
 $query = "INSERT INTO `school_admission`(`student_name`, `student_dob`, `student_adhar`, `student_blood`, `student_gender`, `student_mother_tongue`, `student_nationality`, `student_religion`, `student_category`, `student_image`, `mother_image`, `father_image`, `guardian_image`, `father_name`, `mother_name`, `guardian_name`, `relationship`, `father_occupation`, `mother_occupation`, `annual_income`, `residential_address`, `permanent_address`, `phone_no`, `email`, `pincode`, `school_name`, `last_attended`, `promoted_class`) 
 								VALUES('$student_name', '$student_dob', '$student_adhar', '$student_blood', '$student_gender', '$student_mother_tongue', '$student_nationality', '$student_religion', '$student_category', '$data1', '$data2', '$data3', '$data4', '$father_name', '$mother_name', '$guardian_name', '$relationship', '$father_occupation', '$mother_occupation', '$annual_income', '$residential_address', '$permanent_address', '$phone_no', '$email', '$pincode', '$school_name', '$last_attended', '$promoted_class')";

@@ -95,7 +95,6 @@ $msg="Our Value Detials Updated successfully";
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 											<?php
-                                            include "config.php";
                                             $sql = "SELECT * from  value";
                                             $query = mysqli_query($con, $sql);
                                             $result = mysqli_fetch_assoc($query);

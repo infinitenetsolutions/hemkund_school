@@ -30,7 +30,7 @@
                         <!-- featured-imagebox-course -->
                         <div class="featured-imagebox featured-imagebox-course">
                             <div class="ttm-post-thumbnail featured-thumbnail"> 
-                                <img class="img-fluid" src="srinath_school/img/vehicleimages/<?php echo $row['image']?>" alt="image" style="height:280px"> 
+                                <img class="img-fluid" src="hemkund_school/img/vehicleimages/<?php echo $row['image']?>" alt="image" style="height:280px"> 
                             </div>
                             <div class="featured-content featured-content-post">
                                 <div class="featured-content-post-inner">

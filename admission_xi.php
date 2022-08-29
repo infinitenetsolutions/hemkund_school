@@ -47,8 +47,8 @@ if(isset($_POST['submit1']))
 	$_SESSION["phone_no"] = $phone;
 	$_SESSION["address"] = $address;
 
-	$_SESSION["surl"] = "https://srinathschool.com/response.php";
-	$_SESSION["surl"] = "https://srinathschool.com/response.php"; 
+	$_SESSION["surl"] = "https://hemkundpublicschool.com/response.php";
+	$_SESSION["surl"] = "https://hemkundpublicschool.com/response.php"; 
 	
 	$sql1 = "INSERT INTO `class_xi`(`name`, `dob`,`religion`,`nationality`,`fname`,`mname`,`address`,`year`,`board`,`subject_desired1`,`subject_desired2`,`subject_desired3`,`subject_desired4`,`subject_desired5`,`subject_desired6`,`father_occp`,`mother_occp`,`father_desig`,`mother_desig`,`father_annual`,`mother_annual`,`phone`,`perma_address`,`language`,`other_lang`,`disease`,`sibling_name1`,`sibling_name2`,`sibling_name3`,`sibling_name4`,`ward_name`,`transfer_certificate`,`character_certificate`,`marks_sheet`,`birth_certificate`,`medical_certificate`,`activities`) 
     VALUES ('$name', '$dob','$religion','$nationality','$fname','$mname','$address','$year','$board','$subject_desired1','$subject_desired2','$subject_desired3','$subject_desired4','$subject_desired5','$subject_desired6','$father_occp','$mother_occp','$father_desig','$mother_desig','$father_annual','$mother_annual','$phone','$perma_address','$language','$other_lang','$disease','$sibling_name1','$sibling_name2','$sibling_name3','$sibling_name4','$ward_name','$transfer_certificate','$character_certificate','$marks_sheet','$birth_certificate','$medical_certificate','$activities')";
@@ -532,7 +532,7 @@ if(isset($_POST['submit1']))
                                     </div>
                                     <div class="card card-secondary">
                                         <div class="card-header">
-                                            <h3 class="card-title">Name of brother and sister if studying in Srinath Public School</h3>
+                                            <h3 class="card-title">Name of brother and sister if studying in Hemkund Public School</h3>
                                         </div>
                                         <div class="card-body table-responsive p-0">
                                             <div class="card-body">
@@ -664,7 +664,7 @@ if(isset($_POST['submit1']))
         <div class="row">
             <div class="col-lg-12">
                 <h4 class="font-weight-normal" style="margin-bottom: 0px;padding: 10px;">For the bright future
-                    of your child join <b>Srinath Public School</b> </h4>
+                    of your child join <b>Hemkund Public School</b> </h4>
             </div>
         </div>
     </div>
@@ -688,7 +688,7 @@ if(isset($_POST['submit1']))
                                 alt="image">
                         </div>
                         <div class="textwidget widget-text">
-                            <p class="pb-10 pr-30 res-575-pr-0">The school was established in 2014. Srinath Public
+                            <p class="pb-10 pr-30 res-575-pr-0">The school was established in 2014. Hemkund Public
                                 School is a Co-ed school affiliated to Central Board of Secondary Education</p>
                         </div>
                     </div>
@@ -709,8 +709,8 @@ if(isset($_POST['submit1']))
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 widget-area">
                     <div class="widget style2 widget-out-link clearfix">
                         <h3 class="widget-title">Our Location</h3>
-                        <p>DINDLI- ADITYAPUR- PO- ADITYAPUR- DIST- SERAIKELA-KHARSAWAN -831013</p>
-                        <p>srinathpublicschool@gmail.com </p>
+                        <p>beside Guru Nanak Welfare Society, Tin Plate Basti, Jamshedpur, Jharkhand-831003</p>
+                        <p>hemkundpublicschool@gmail.com </p>
                         <p>+91 089866 26046</p>
                     </div>
                 </div>
@@ -750,7 +750,7 @@ if(isset($_POST['submit1']))
                                 <img data-src="images/footer-award-two.png" class="img-fluid lazyload" alt="award-two">
                             </div>
                         </div> -->
-                    <div class="text-center pb-15">© Copyright Srinath Public School 2021 All rights reserved |
+                    <div class="text-center pb-15">© Copyright Hemkund Public School 2021 All rights reserved |
                         Designed by<a href="https://www.infinitenetsolutions.com/"> Infinite Net Solutions</a></div>
 
                 </div>

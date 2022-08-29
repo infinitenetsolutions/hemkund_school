@@ -85,7 +85,7 @@ $msg="Testimonial deleted successfully";
 						<a href="add_testimonial.php" class="btn btn-info">Add New Details</a>
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Testimonial Details</div>
+							<div class="panel-heading" style="background: #d66431!important;color: #fff;">Testimonial Details</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -120,7 +120,7 @@ foreach($results as $result)
 {				?>	
 										<tr>
 											<td><?php echo htmlentities($cnt);?></td>
-                                            <td><?php echo htmlentities($result->msg);?></td>
+                                            <td style="width:20%"><?php echo htmlentities($result->msg);?></td>
                                             <td><?php echo htmlentities($result->description);?></td>
                                             <td><img src="img/vehicleimages/<?php echo htmlentities($result->image);?>" width="100" height="80" style="border:solid 1px #000"></td>
 											<td><a href="update_testimonial.php?id=<?php echo $result->id;?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;

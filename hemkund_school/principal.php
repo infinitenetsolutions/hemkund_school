@@ -32,7 +32,7 @@ $msg="Info Updated successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Hemkund School Portal | Admin Update Contact</title>
+	<title>Hemkund School Portal | Admin Update Principal</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -82,7 +82,7 @@ $msg="Info Updated successfully";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Update Contact Info</h2>
+						<h2 class="page-title">Update Principal Info</h2>
 
 						<div class="row">
 							<div class="col-md-10">
@@ -105,23 +105,18 @@ foreach($results as $result)
 {				?>	
 
 				<div class="form-group">
-												<label class="col-sm-4 control-label">Heading</label>
+												<label class="col-sm-4 control-label">Principal's Name</label>
 												<div class="col-sm-8">
 													<input type="text" class="form-control" value="<?php echo htmlentities($result->heading);?>" name="heading" id="heading" required>
 												</div>
 											</div>
 											<div class="form-group">
-												<label class="col-sm-4 control-label">Message</label>
+												<label class="col-sm-4 control-label">Principal's Message</label>
 												<div class="col-sm-8">
-													<textarea class="form-control" name="msg" id="addr" required><?php echo htmlentities($result->msg);?></textarea>
+													<textarea class="form-control" name="msg" id="msg" required><?php echo htmlentities($result->msg);?></textarea>
 												</div>
 											</div>
-											<!--<div class="form-group">
-												<label class="col-sm-4 control-label"> Contact Number </label>
-												<div class="col-sm-8">
-													<input type="text" class="form-control" value="<?php echo htmlentities($result->phone);?>" name="phone" id="phone" required>
-												</div>
-											</div>-->
+											
 <?php }} ?>
 											<div class="hr-dashed"></div>
 											
@@ -163,6 +158,18 @@ foreach($results as $result)
 	<script src="js/fileinput.js"></script>
 	<script src="js/chartData.js"></script>
 	<script src="js/main.js"></script>
+  	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+  	<script type="text/javascript">
+            // Initialize CKEditor
+            //CKEDITOR.inline( 'short_desc' );
+
+            CKEDITOR.replace('msg', {
+
+                width: "600px",
+                height: "300px"
+
+            });
+        </script>
 
 </body>
 

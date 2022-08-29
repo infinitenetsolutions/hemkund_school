@@ -85,7 +85,7 @@ $msg="Slider Image deleted successfully";
 						<a href="add_slider.php" class="btn btn-info">Add New Slider</a>
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Slider Details</div>
+							<div class="panel-heading" style="background: #d66431!important;color: #fff;">Slider Details</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>

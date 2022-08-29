@@ -91,19 +91,13 @@ div#block-hd {
                                                 <!-- featured-thumbnail -->
                                                 <div class="featured-thumbnail">
                                                    <video controls style="width: 100%;height: 270px;">
-                                            	<source src="srinath_school/img/vehicleimages/<?php echo $row['video']; ?>" type="video/mp4">
+                                            	<source src="hemkund_school/img/vehicleimages/<?php echo $row['video']; ?>" type="video/mp4">
                                             	</video>
-                                                   <!--<a href="#"> <img class="img-fluid" src="srinath_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="width: 100%;height: 270px;"></a>-->
-                                                </div><!-- featured-thumbnail end-->
-                                               <!--<div class="featured-iconbox ttm-media-link">
-                                                    <a class="ttm_prettyphoto ttm_image" title="campus" data-rel="prettyPhoto" href="srinath_school/img/vehicleimages/<?php echo $row['image']; ?>">
-                                                        <i class="fa fa-expand"></i>
-                                                    </a>
-                                                </div>-->
-                                            </div><!-- ttm-box-view-overlay end-->
-                                        </div><!-- featured-imagebox -->
-                                        <!--  <div id="block-hd"><a href="gallery_year2.php?event=<?php echo $row['img_desc'] ?>"  style="color: white"><?php echo $row['img_desc'] ?></a></div>-->
-                                    </div>
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
 
                                     <?php } ?>                                                                                                                                                                                                                
 

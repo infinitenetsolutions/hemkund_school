@@ -5,7 +5,7 @@ include './include/db1.php';
 
 
 <div class="stick-right">
-    <div class="d-load"><span><a download="download" href="./srinath_school/img/vehicleimages/download.pdf">Download Prospectus</a></span></div>
+    <div class="d-load"><span><a download="download" href="./hemkund_school/img/vehicleimages/download.pdf">Download Prospectus</a></span></div>
 </div>
 
 
@@ -20,7 +20,7 @@ include './include/db1.php';
       {
       ?>
             <div class="banner-slide">
-                <img class="img-fluid lazyload" data-src="./srinath_school/img/vehicleimages/<?php echo $row['img']; ?>" alt="slider-image"/>
+                <img class="img-fluid lazyload" data-src="./hemkund_school/img/vehicleimages/<?php echo $row['img']; ?>" alt="slider-image"/>
                 <div class="banner-caption">
                     <div class="info">
 
@@ -409,7 +409,7 @@ include './include/db1.php';
                     <!-- featured-imagebox-post -->
                     <div class="featured-imagebox featured-imagebox-post style1">
                         <div class="ttm-post-thumbnail featured-thumbnail"> 
-                            <img class="img-fluid lazyload" data-src="./srinath_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="height: 270px;width: 100%;">
+                            <img class="img-fluid lazyload" data-src="./hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="image" style="height: 270px;width: 100%;">
                         </div>
                         <div class="featured-content featured-content-post">
                             <div class="ttm-box-post-date">
@@ -480,7 +480,7 @@ include './include/db1.php';
                                                 <div class="testimonial-content">
                                                     <div class="testimonial-avatar">
                                                         <div class="testimonial-img">
-                                                            <img class="img-center lazyload" data-src="./srinath_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="testimonial-img">
+                                                            <img class="img-center lazyload" data-src="./hemkund_school/img/vehicleimages/<?php echo $row['image']; ?>" alt="testimonial-img">
                                                         </div>
                                                     </div>
                                                     <blockquote><?php echo $row['description']; ?></blockquote>

@@ -116,7 +116,7 @@ div#block-hd {
                                                <div class="container1">
   												<a href="video_event.php?event=<?php echo $row['event'] ?>">
                                                 <video controls style="width: 100%;height: 270px;">
-                                            	<source src="srinath_school/img/vehicleimages/<?php echo $row['video']; ?>" type="video/mp4">
+                                            	<source src="hemkund_school/img/vehicleimages/<?php echo $row['video']; ?>" type="video/mp4">
                                             	</video>
                                                 <!-- <div class="overlay1">
                                                   <div class="text1"><?php echo $row['event'] ?></div>
