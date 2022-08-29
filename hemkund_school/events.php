@@ -85,7 +85,7 @@ $msg="events deleted successfully";
 						<a href="add_events.php" class="btn btn-info">Add New Details</a>
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">events Details</div>
+							<div class="panel-heading" style="background: #d66431!important;color: #fff;">events Details</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
