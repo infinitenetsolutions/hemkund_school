@@ -123,7 +123,7 @@ foreach($results as $result)
                                             <td style="width:20%"><?php echo htmlentities($result->msg);?></td>
                                             <td><?php echo htmlentities($result->description);?></td>
                                             <td><img src="img/vehicleimages/<?php echo htmlentities($result->image);?>" width="100" height="80" style="border:solid 1px #000"></td>
-											<td><a href="update_testimonial.php?id=<?php echo $result->id;?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
+											<td><a href="update_testimonial1.php?id=<?php echo $result->id;?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
 												<a href="testimonial.php?id=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 										</tr>
 										<?php $cnt=$cnt+1; }} ?>

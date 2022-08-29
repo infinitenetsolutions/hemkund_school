@@ -1,4 +1,4 @@
-<div class="brand clearfix" style="background: #7c0000!important;">
+<div class="brand clearfix" style="background: #03ab7a!important;">
 	<a href="dashboard.php" style="font-size: 20px;
     color: #3e3f3a;
     line-height: 50px;

@@ -642,7 +642,8 @@ li {
   background-color: #b4b4b4;
 }
 .ts-sidebar {
-  background: #7c0000;
+  /* background: #7c0000;#03ab7a */
+  background: #03ab7a;
   max-height: 0;
   transition: max-height 0.3s;
   overflow: hidden;
@@ -688,6 +689,7 @@ li {
   text-decoration: none;
   padding: 12px 15px;
   color: #fff;
+  font-weight: 600;
 }
 .ts-sidebar-menu li {
   position: relative;

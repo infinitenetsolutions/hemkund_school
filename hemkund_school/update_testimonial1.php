@@ -3,11 +3,10 @@ session_start();
 error_reporting(0);
 include('includes/config.php');
 
-$id=$_GET['imgid'];
+$id=$_GET['id'];
 if(isset($_POST['update']))
 {
-$msg = substr($_POST['msg'],0,4);
-//$msg= $_POST['msg'];
+$msg = $_POST['msg'];
 $description= $_POST['description'];
 $image= $_FILES['image']['name'];
 $image_temp=$_FILES['image']['tmp_name'];
@@ -16,61 +15,27 @@ $image_temp=$_FILES['image']['tmp_name'];
 if($image_temp != "" && $msg != "")
 {
     move_uploaded_file($image_temp , "img/vehicleimages/$image");
-    $c_update="update gallery set image_year='$msg', img_desc='$description', image= '$image' where id='$id'";   
+    $c_update="update testimonial set description='$description', msg='$msg', image= '$image' where id='$id'";   
 }
 else if($image_temp != "" && $msg == "")
 {
     move_uploaded_file($image_temp , "img/vehicleimages/$image");
-    $c_update="update gallery set img_desc='$description', image= '$image' where id='$id'";   
+    $c_update="update testimonial set description='$description', image= '$image' where id='$id'";   
 }
 else if($image_temp == "" && $msg != "")
 {
-     $c_update="update gallery set image_year='$msg', img_desc='$description' where id='$id'";   
+     $c_update="update testimonial set description='$description', msg='$msg' where id='$id'";   
 }
 else
 {
-    $c_update="update gallery set img_desc='$description' where id='$id'";
+    $c_update="update testimonial set description='$description' where id='$id'";
 }
 
 $run_update=mysqli_query($con, $c_update);
 if($run_update){
-header("location:img_gallery.php");
+header("location:testimonial.php");
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-/*
-if(strlen($_SESSION['alogin'])==0)
-	{	
-header('location:index.php');
-}
-else{
-
-if(isset($_POST['update']))
-{
-$image=$_FILES["image"]["name"];
-
-$id=intval($_GET['id']);
-move_uploaded_file($_FILES["image"]["tmp_name"],"img/vehicleimages/".$_FILES["image"]["name"]);
-
-$sql="update staff set image=:image where id=:id";
-$query = $dbh->prepare($sql);
-$query->bindParam(':image',$image,PDO::PARAM_STR);
-$query->bindParam(':id',$id,PDO::PARAM_STR);
-$query->execute();
-
-$msg="Image updated successfully";
-header('Location: img_gallery.php');
-} */
 
 ?>
 
@@ -85,7 +50,7 @@ header('Location: img_gallery.php');
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Hemkund Public School | Admin Gallery Updation </title>   
+	<title>Hemkund Public School | Admin Testimonial Updation </title>   
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -139,7 +104,7 @@ td, th {
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Image Gallery Details </h2>
+						<h2 class="page-title">Testimonial</h2>
 
 						<div class="row">
 							<div class="col-md-10">
@@ -157,48 +122,27 @@ td, th {
 
 
 <div class="form-group">
-												<!--<label class="col-sm-4 control-label">Current Image</label>-->
-
 <?php
-$id=$_GET['imgid'];
-$sql = "select * from `gallery` where `id` = '$id'";
+$id=$_GET['id'];
+$sql = "select * from `testimonial` where `id` = '$id'";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_assoc($result);
 ?>
-<?php 
-/* $id=intval($_GET['id']);
-$sql ="SELECT img from staff where image.id=:id";
-$query = $dbh -> prepare($sql);
-$query-> bindParam(':id', $id, PDO::PARAM_STR);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $result)
-{ */	
-?>
+
 <div>
-<form action="" method="post" enctype="multipart/form-data"  />
+<form action="" method="post" enctype="multipart/form-data"  >
      <table width="500px" align="center" bgcolor="blueskay">
         <tr align="center">
-           <td colspan="4"><h2>Update Gallery Image</h2></td>
+           <td colspan="4"><h2>Update Testimonial Details</h2></td>
         </tr>
         <tr>
-            <td align="right">Select New Image Date:</td>
-            <td><input type="month" name="msg" value="<?php echo $row['image_year']; ?>"  /></td>
+            <td align="right">User Name:</td>
+            <td><input type="text" name="description" value="<?php echo $row['description']; ?>"  /></td>
         </tr>
         
         <tr>
-            <td align="right">Previous Date:</td>
-            <td><input type="text" name="msg" disabled value="<?php echo $row['image_year']; ?>"  /></td>
-       	</tr>
-        
-        <tr></tr>
-            
-        <tr>
-            <td align="right">Update Image Description:</td>
-            <td><textarea rows="4" cols="50" name="description"><?php echo $row['img_desc']; ?></textarea></td>
+            <td align="right">Update Message:</td>
+            <td><textarea rows="4" cols="50" name="msg"><?php echo $row['msg']; ?></textarea></td>
         </tr>
                
         <tr>
@@ -212,38 +156,16 @@ foreach($results as $result)
         </tr>
         <tr align="center">
              <td colspan="2">
-             <!--<input type="submit" name="update" value="Update Event"/>-->
              <button class="btn btn-primary" name="update" type="submit">Update</button></td>
              <td></td>
         </tr> 
      </table>
    </form>
 </div>
-<!--<div class="col-sm-8">
-<img src="img/vehicleimages/<?php echo htmlentities($row->image);?>" width="300" height="200" style="border:solid 1px #000">
-</div> -->
 <?php //}}?>
 </div>
 
-											<!--<div class="form-group">
-												<label class="col-sm-4 control-label">Upload New Image <span style="color:red">*</span></label>
-												<div class="col-sm-8">
-											<input type="file" name="image" required>
-												</div>
-											</div> 
-											<div class="hr-dashed"></div>-->
-											
-										
-								
-											
-										<!--	<div class="form-group">
-												<div class="col-sm-8 col-sm-offset-4">
-								
-													<button class="btn btn-primary" name="update" type="submit">Update</button>
-												</div>
-											</div>-->
-
-										</form>
+		</form>
 
 									</div>
 								</div>
