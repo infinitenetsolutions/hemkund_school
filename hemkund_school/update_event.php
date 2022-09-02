@@ -2,41 +2,35 @@
 session_start();
 error_reporting(0);
 include('includes/config.php');
+if(strlen($_SESSION['alogin'])==0)
+	{	
+header('location:index.php');
+}
+else{
 
-$id=$_GET['id'];
 if(isset($_POST['update']))
 {
-$msg = $_POST['msg'];
-$description= $_POST['description'];
-$image= $_FILES['image']['name'];
-$image_temp=$_FILES['image']['tmp_name'];
+$img=$_FILES["img"]["name"];
+//$vimage1=$_FILES["img1"]["name"];
+
+$id=intval($_GET['imgid']);
+
+move_uploaded_file($_FILES["img"]["tmp_name"],"img/vehicleimages/".$_FILES["img"]["name"]);
+//move_uploaded_file($_FILES["img1"]["tmp_name"],"img/vehicleimages/".$_FILES["img1"]["name"]);
+
+$sql="update tblslider set img=:img where id=:id";
+//$sql="update tblvehicles set Vimage1=:vimage1 where id=:id";
+
+$query = $dbh->prepare($sql);
+$query->bindParam(':img',$img,PDO::PARAM_STR);
+$query->bindParam(':id',$id,PDO::PARAM_STR);
+$query->execute();
+
+$msg="Image updated successfully";
+header('Location: slider.php');
 
 
-if($image_temp != "")
-{
-    move_uploaded_file($image_temp , "img/vehicleimages/$image");
-    $c_update="update infrastructure set description='$description', msg='$msg', image= '$image' where id='$id'";   
 }
-// else if($image_temp != "" && $msg == "")
-// {
-//     move_uploaded_file($image_temp , "img/vehicleimages/$image");
-//     $c_update="update infrastructure set description='$description', image= '$image' where id='$id'";   
-// }
-// else if($image_temp == "" && $msg != "")
-// {
-//      $c_update="update infrastructure set description='$description', msg='$msg' where id='$id'";   
-// }
-else
-{
-    $c_update="update infrastructure set description='$description', msg='$msg' where id='$id'";
-}
-
-$run_update=mysqli_query($con, $c_update);
-if($run_update){
-header("location:infrastructure.php");
-}
-}
-
 ?>
 
 <!doctype html>
@@ -50,7 +44,7 @@ header("location:infrastructure.php");
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Hemkund Public School | Admin Infrastructure Updation </title>   
+	<title>Hemkund Public School | Admin Update Event</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -85,10 +79,6 @@ header("location:infrastructure.php");
     -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
-
-td, th {
-    padding: 8px;
-}
 		</style>
 
 
@@ -104,12 +94,12 @@ td, th {
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Infrastructure</h2>
+						<h2 class="page-title">Update Event Images </h2>
 
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading" style="background: #d66431!important;color: #fff;">Edit Image Gallery Details</div>
+									<div class="panel-heading" style="background: #d66431!important;color: #fff;">Edit Slider Details</div>
 									<div class="panel-body">
 										<form method="post" class="form-horizontal" enctype="multipart/form-data">
 										
@@ -122,50 +112,44 @@ td, th {
 
 
 <div class="form-group">
-<?php
-$id=$_GET['id'];
-$sql = "select * from `infrastructure` where `id` = '$id'";
-$result = mysqli_query($con,$sql);
-$row = mysqli_fetch_assoc($result);
-?>
+<?php 
+$id=intval($_GET['id']);
+$sql ="SELECT img from tblslider where img.id=:id";
+$query = $dbh -> prepare($sql);
+$query-> bindParam(':id', $id, PDO::PARAM_STR);
+$query->execute();
+$results=$query->fetchAll(PDO::FETCH_OBJ);
+$cnt=1;
+if($query->rowCount() > 0)
+{
+foreach($results as $result)
+{	?>
 
-<div>
-<form action="" method="post" enctype="multipart/form-data"  >
-     <table width="500px" align="center" bgcolor="blueskay">
-        <tr align="center">
-           <td colspan="4"><h2>Update Infrastructure Details</h2></td>
-        </tr>
-        <tr>
-            <td align="right">Message Title:</td>
-            <td><input type="text" name="msg" value="<?php echo $row['msg']; ?>"  /></td>
-        </tr>
-        
-        <tr>
-            <td align="right">Message Description:</td>
-            <td><textarea rows="4" cols="50" name="description"><?php echo $row['description']; ?></textarea></td>
-        </tr>
-               
-        <tr>
-             <td align="right">Select New Image:</td>
-             <td><input type="file" name="image" /></td>
-        </tr>
-        
-        <tr>
-        	<td align="right">Current Image:</td>
-            <td><img src="img/vehicleimages/<?php echo $row['image']; ?>" width="250px" ></td>
-        </tr>
-        <tr align="center">
-             <td colspan="2">
-             <button class="btn btn-primary" name="update" type="submit">Update</button></td>
-             <td></td>
-        </tr> 
-     </table>
-   </form>
+<div class="col-sm-8">
+<img src="img/vehicleimages/<?php echo htmlentities($result->img);?>" width="300" height="200" style="border:solid 1px #000">
 </div>
-<?php //}}?>
+<?php }}?>
 </div>
 
-		</form>
+											<div class="form-group">
+												<label class="col-sm-4 control-label">Upload New Image 1<span style="color:red">*</span></label>
+												<div class="col-sm-8">
+											<input type="file" name="img" required>
+												</div>
+											</div>
+											<div class="hr-dashed"></div>
+											
+										
+								
+											
+											<div class="form-group">
+												<div class="col-sm-8 col-sm-offset-4">
+								
+													<button class="btn btn-primary" name="update" type="submit">Update</button>
+												</div>
+											</div>
+
+										</form>
 
 									</div>
 								</div>
@@ -197,4 +181,4 @@ $row = mysqli_fetch_assoc($result);
 </body>
 
 </html>
-<?php //} ?>
+<?php } ?>

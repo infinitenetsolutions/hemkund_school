@@ -37,7 +37,7 @@ $msg="Details updted successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Srianth School Portal | Admin Update Details</title>
+	<title>Hemkund School Portal | Admin Update Details</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -123,8 +123,8 @@ foreach($results as $result)
                                             <div class="form-group">
 												<label class="col-sm-4 control-label">Description</label>
 												<div class="col-sm-8">
-													<input type="text" class="form-control" value="<?php echo htmlentities($result->desi);?>" name="desi" id="desi" required>
-                                                   
+													<!-- <input type="text" class="form-control" value="<?php echo htmlentities($result->desi);?>" name="desi" id="desi" required> -->
+													<textarea class="form-control" name="desi" id="msg" required><?php echo htmlentities($result->desi);?></textarea>
 												</div>
 											</div>
 											<div class="hr-dashed"></div>
@@ -167,6 +167,18 @@ foreach($results as $result)
 	<script src="js/fileinput.js"></script>
 	<script src="js/chartData.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+  	<script type="text/javascript">
+            // Initialize CKEditor
+            //CKEDITOR.inline( 'short_desc' );
+
+            CKEDITOR.replace('msg', {
+
+                width: "600px",
+                height: "300px"
+
+            });
+    </script>
 
 </body>
 
